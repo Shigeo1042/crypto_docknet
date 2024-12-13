@@ -10,7 +10,7 @@ use dock_crypto_utils::elgamal::{SecretKey as AuditorSecretKey, PublicKey as Aud
 
 fn protego_benchmark(c: &mut Criterion) {
     let message_len = [5, 10, 50, 100, 500, 1000, 5000, 10000];
-    let issuer_num = [5, 10, 50, 100];
+    let issuer_num = [5, 10, 50, 100, 500, 1000];
     let mut rng =  StdRng::seed_from_u64(0u64);
 
     for message_len_temp in message_len.iter(){
